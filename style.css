@@ -84,17 +84,17 @@ body {
 }
 
 .countdown #day:before {
-	content: 'Day';
+	content: 'Hari';
 }
 
 .countdown #hour:before {
-	content: 'Hours';
+	content: 'Jam';
 }
 
 .countdown #minute:before {
-	content: 'Minutes';
+	content: 'Menit';
 }
 
 .countdown #second:before {
-	content: 'Seconds';
+	content: 'Detik';
 }
