@@ -9,7 +9,7 @@ body {
 	background-attachment: fixed;
 	background-blend-mode: hard-light;
 	background-position: center;
-/* 	background-size: 100%; */
+	background-size: cover;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
 	background: url(idul2.jpg);
 	background-attachment: fixed;
 	background-position: center;
-/* 	background-size: 100%; */
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
