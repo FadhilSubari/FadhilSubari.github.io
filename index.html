@@ -42,10 +42,37 @@
 			var m = Math.floor(gap % (hour) / (minute));
 			var s = Math.floor(gap % (minute) / (second));
 
-			document.getElementById('day').innerText = d;
-			document.getElementById('hour').innerText = h;
-			document.getElementById('minute').innerText = m;
-			document.getElementById('second').innerText = s;
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober',
+				'November', 'Desember'
+			];
+
+			var myDays = ['Mgu', 'Snn', 'Sls', 'Rbu', 'Kms', 'Jmt', 'Sbt'];
+
+			var date = new Date();
+
+			var day = date.getDate();
+
+
+			var thisDay = date.getDay(),
+
+				thisDay = myDays[thisDay];
+
+			var d2 = new Date().getDate();
+			var h2 = new Date().getHours();
+			var m2 = new Date().getMinutes();
+			var s2 = new Date().getSeconds();
+
+			if (now > countDate) {
+				document.getElementById('day').innerText = thisDay;
+				document.getElementById('hour').innerText = h2;
+				document.getElementById('minute').innerText = m2;
+				document.getElementById('second').innerText = s2;
+			} else {
+				document.getElementById('day').innerText = d;
+				document.getElementById('hour').innerText = h;
+				document.getElementById('minute').innerText = m;
+				document.getElementById('second').innerText = s;
+			}
 		}
 		setInterval(function () {
 			newYear();
